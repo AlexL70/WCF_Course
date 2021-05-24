@@ -28,6 +28,11 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MyServiceHost", "MyServiceH
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyClient", "MyClient\MyClient.csproj", "{6298AC29-42ED-43D9-B6A5-C354768B96FD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8827D635-4660-45DC-9D8E-89D1738781BE} = {8827D635-4660-45DC-9D8E-89D1738781BE}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +47,10 @@ Global
 		{8827D635-4660-45DC-9D8E-89D1738781BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8827D635-4660-45DC-9D8E-89D1738781BE}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{8827D635-4660-45DC-9D8E-89D1738781BE}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{6298AC29-42ED-43D9-B6A5-C354768B96FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6298AC29-42ED-43D9-B6A5-C354768B96FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6298AC29-42ED-43D9-B6A5-C354768B96FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6298AC29-42ED-43D9-B6A5-C354768B96FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
