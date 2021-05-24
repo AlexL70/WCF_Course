@@ -24,5 +24,8 @@ namespace TextService
 
         [OperationContract]
         int[] GetSorted(int[] arr);
+
+        [OperationContract]
+        IEnumerable<Country> GetAllCountries();
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using TextService.DTO;
 
 namespace TextService
@@ -44,6 +45,28 @@ namespace TextService
                 }
             }
             return topper;
+        }
+
+        public IEnumerable<Country> GetAllCountries()
+        {
+            List<Country> lc = new List<Country>();
+            string connStr = "Data Source=.;Initial Catalog=WCF;Integrated Security=True";
+            SqlConnection conn = new SqlConnection(connStr);
+
+            SqlCommand command = new SqlCommand("SELECT  Id, Name FROM Countries ORDER BY Name", conn);
+
+            conn.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+                lc.Add(new Country
+                {
+                    Id = int.Parse(reader[0].ToString()),
+                    Name = reader[1].ToString()
+                });
+            reader.Close();
+            conn.Close();
+
+            return lc;
         }
     }
 }
