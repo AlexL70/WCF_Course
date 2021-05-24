@@ -1,4 +1,6 @@
-﻿using System.ServiceModel;
+﻿using System.Collections.Generic;
+using System.ServiceModel;
+using TextService.DTO;
 
 namespace TextService
 {
@@ -12,7 +14,10 @@ namespace TextService
         string GetMessage(string Name);
 
         [OperationContract]
-        string GetResult(int Sid, string SName, int M1, int M2, int M3);
+        string GetResult(Student student);
+        
+        [OperationContract]
+        Student GetTopper(IEnumerable<Student> students);
 
         [OperationContract]
         int GetMax(int[] arr);

@@ -44,6 +44,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO\Student.cs" />
     <Compile Include="IMyService.cs" />
     <Compile Include="MyService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

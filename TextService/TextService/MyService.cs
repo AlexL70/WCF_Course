@@ -1,5 +1,6 @@
 ﻿using System;
-using System.Threading;
+using System.Collections.Generic;
+using TextService.DTO;
 
 namespace TextService
 {
@@ -9,10 +10,10 @@ namespace TextService
 
         public string GetMessage(string Name) => $"Hello Mr/Ms {Name}";
 
-        public string GetResult(int Sid, string SName, int M1, int M2, int M3)
+        public string GetResult(Student student)
         {
-            var avg = (M1 + M2 + M3) / 3.0;
-            return avg >= 35.0 ? "Pass" : "Fail";
+            var avg = (student.M1 + student.M2 + student.M3) / 3.0;
+            return $"{student.StudentName} {(avg >= 35.0 ? "passes" : "fails")}";
         }
 
         public int GetMax(int[] arr)
@@ -27,6 +28,22 @@ namespace TextService
         {
             Array.Sort(arr);
             return arr;
+        }
+
+        public Student GetTopper(IEnumerable<Student> students)
+        {
+            var topper = new Student();
+            var topResult = 0;
+            foreach(var student in students)
+            {
+                var result = student.M1 + student.M2 + student.M3;
+                if (result > topResult)
+                {
+                    topResult = result;
+                    topper = student;
+                }
+            }
+            return topper;
         }
     }
 }
