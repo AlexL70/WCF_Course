@@ -28,6 +28,11 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MulServiceHost", "MulServic
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulServiceClient", "MulServiceClient\MulServiceClient.csproj", "{A1AE1F9D-667C-43CE-9DEA-8CE06F9A9258}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4AA52E55-F8F8-4C85-975D-C1A32A7F6BE7} = {4AA52E55-F8F8-4C85-975D-C1A32A7F6BE7}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +47,10 @@ Global
 		{4AA52E55-F8F8-4C85-975D-C1A32A7F6BE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AA52E55-F8F8-4C85-975D-C1A32A7F6BE7}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{4AA52E55-F8F8-4C85-975D-C1A32A7F6BE7}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{A1AE1F9D-667C-43CE-9DEA-8CE06F9A9258}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1AE1F9D-667C-43CE-9DEA-8CE06F9A9258}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1AE1F9D-667C-43CE-9DEA-8CE06F9A9258}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1AE1F9D-667C-43CE-9DEA-8CE06F9A9258}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
