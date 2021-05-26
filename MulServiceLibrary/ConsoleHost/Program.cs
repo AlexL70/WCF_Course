@@ -14,8 +14,9 @@ namespace ConsoleHost
             var host = new ServiceHost(typeof(MulService), httpBaseAddress /*, tcpBaseAddress*/);
             var tcpEndPoint = host.AddServiceEndpoint(typeof(IMulService), new NetTcpBinding(), tcpBaseAddress);
             var httpEndPoint = host.AddServiceEndpoint(typeof(IMulService), new BasicHttpBinding(), httpBaseAddress);
-            var metadataBehavior = new ServiceMetadataBehavior() { HttpGetEnabled = false };
-            host.Description.Behaviors.Add(metadataBehavior);
+
+            //var metadataBehavior = new ServiceMetadataBehavior() { HttpGetEnabled = false };
+            //host.Description.Behaviors.Add(metadataBehavior);
 
             var httpEndPointMex = host.AddServiceEndpoint(typeof(IMetadataExchange), MetadataExchangeBindings.CreateMexHttpBinding(), $"{httpBaseAddress}/mex");
             var tcpEndPointMex = host.AddServiceEndpoint(typeof(IMetadataExchange), MetadataExchangeBindings.CreateMexTcpBinding(), $"{tcpBaseAddress}/mex");
