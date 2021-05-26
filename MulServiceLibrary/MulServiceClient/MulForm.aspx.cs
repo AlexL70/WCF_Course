@@ -12,7 +12,8 @@ namespace MulServiceClient
         protected void Button1_Click(object sender, EventArgs e)
         {
             MulServiceReference.MulServiceClient client = new MulServiceReference.MulServiceClient("BasicHttpBinding_IMulService");
-            Response.Write(client.Mult(5, 5));
+            int resp = client.Mult(5, 5);
+            Response.Write(resp);
         }
     }
 }
