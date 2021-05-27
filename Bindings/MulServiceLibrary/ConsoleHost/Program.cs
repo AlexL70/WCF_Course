@@ -1,6 +1,7 @@
 ﻿using MulServiceLibrary;
 using System;
 using System.ServiceModel;
+using System.ServiceModel.Description;
 
 namespace ConsoleHost
 {
@@ -8,9 +9,18 @@ namespace ConsoleHost
     {
         static void Main(string[] args)
         {
-            var httpBaseAddress = new Uri("http://localnost:63635/MyHttpEp");
+            var httpBaseAddress = new Uri("http://localhost:6790/MyHttpEp");
             var host = new ServiceHost(typeof(MulService), httpBaseAddress);
-            var httpEndPoint = host.AddServiceEndpoint(typeof(IMulService), new BasicHttpBinding(), httpBaseAddress);
+            var httpBinding = new BasicHttpBinding()
+            {
+                OpenTimeout = TimeSpan.FromMinutes(10),
+                CloseTimeout = TimeSpan.FromMinutes(5)
+            };
+            var httpEndPoint = host.AddServiceEndpoint(typeof(IMulService), httpBinding, httpBaseAddress);
+
+            var metadataBehavior = new ServiceMetadataBehavior();
+            metadataBehavior.HttpGetEnabled = true;
+            host.Description.Behaviors.Add(metadataBehavior);
 
             host.Open();
 

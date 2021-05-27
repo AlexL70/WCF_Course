@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulServiceLibrary", "MulSer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleHost", "ConsoleHost\ConsoleHost.csproj", "{BEC4975B-381E-4C56-99C0-13E6C2D1ECEF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyClientForBinding", "MyClientForBinding\MyClientForBinding.csproj", "{62154C6F-39F4-402E-A09A-C25FDE57F461}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BEC4975B-381E-4C56-99C0-13E6C2D1ECEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEC4975B-381E-4C56-99C0-13E6C2D1ECEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEC4975B-381E-4C56-99C0-13E6C2D1ECEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62154C6F-39F4-402E-A09A-C25FDE57F461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62154C6F-39F4-402E-A09A-C25FDE57F461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62154C6F-39F4-402E-A09A-C25FDE57F461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62154C6F-39F4-402E-A09A-C25FDE57F461}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
