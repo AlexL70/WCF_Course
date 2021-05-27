@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleHost", "ConsoleHost\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWindowsServiceHost", "MyWindowsServiceHost\MyWindowsServiceHost.csproj", "{488725D7-5178-419C-B769-7BFF2C38C52B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyIisService", "MyIisService\MyIisService.csproj", "{9D4F3DC3-52BB-44A2-8101-31CDEF337C49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{488725D7-5178-419C-B769-7BFF2C38C52B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{488725D7-5178-419C-B769-7BFF2C38C52B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{488725D7-5178-419C-B769-7BFF2C38C52B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D4F3DC3-52BB-44A2-8101-31CDEF337C49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D4F3DC3-52BB-44A2-8101-31CDEF337C49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D4F3DC3-52BB-44A2-8101-31CDEF337C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D4F3DC3-52BB-44A2-8101-31CDEF337C49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
