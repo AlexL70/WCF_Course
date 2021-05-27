@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulServiceClient", "MulServ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleHost", "ConsoleHost\ConsoleHost.csproj", "{BEC4975B-381E-4C56-99C0-13E6C2D1ECEF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWindowsServiceHost", "MyWindowsServiceHost\MyWindowsServiceHost.csproj", "{488725D7-5178-419C-B769-7BFF2C38C52B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{BEC4975B-381E-4C56-99C0-13E6C2D1ECEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEC4975B-381E-4C56-99C0-13E6C2D1ECEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEC4975B-381E-4C56-99C0-13E6C2D1ECEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{488725D7-5178-419C-B769-7BFF2C38C52B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{488725D7-5178-419C-B769-7BFF2C38C52B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{488725D7-5178-419C-B769-7BFF2C38C52B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{488725D7-5178-419C-B769-7BFF2C38C52B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
