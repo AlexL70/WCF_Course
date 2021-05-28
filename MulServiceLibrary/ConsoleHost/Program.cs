@@ -10,7 +10,7 @@ namespace ConsoleHost
         static void Main(string[] args)
         {
             var tcpBaseAddress = new Uri("net.tcp://localhost:63690/MyTcpEndPoint");
-            var httpBaseAddress = new Uri("http://localnost:63635/MyHttpEp");
+            var httpBaseAddress = new Uri("http://localhost:63635/MyHttpEp");
             var host = new ServiceHost(typeof(MulService), httpBaseAddress /*, tcpBaseAddress*/);
             var tcpEndPoint = host.AddServiceEndpoint(typeof(IMulService), new NetTcpBinding(), tcpBaseAddress);
             var httpEndPoint = host.AddServiceEndpoint(typeof(IMulService), new BasicHttpBinding(), httpBaseAddress);
